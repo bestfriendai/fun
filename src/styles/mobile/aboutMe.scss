@@ -1,0 +1,38 @@
+@import '../variables.scss';
+
+.aboutMe {
+	height: calc(100vh - 200px);
+
+	.container {
+		width: 80vw;
+		height: 25vh;
+		display: block;
+		margin: 250px auto 0;
+
+		span {
+			font-size: 2.1875rem;
+			color: $primary-purple;
+			margin-bottom: 100px;
+			font-weight: bold;
+		}
+
+		p,
+		ul {
+			font-size: 0.625rem;
+			color: $primary-purple;
+			margin: 25px 0;
+		}
+
+		ul {
+			padding: 0 15px;
+		}
+	}
+
+	.skill {
+		margin: 50px auto 0;
+	}
+
+	img {
+		display: none;
+	}
+}

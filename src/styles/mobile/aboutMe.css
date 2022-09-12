@@ -1,0 +1,30 @@
+.aboutMe {
+  height: calc(100vh - 200px);
+}
+.aboutMe .container {
+  width: 80vw;
+  height: 25vh;
+  display: block;
+  margin: 250px auto 0;
+}
+.aboutMe .container span {
+  font-size: 2.1875rem;
+  color: #5444c1;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+.aboutMe .container p,
+.aboutMe .container ul {
+  font-size: 0.625rem;
+  color: #5444c1;
+  margin: 25px 0;
+}
+.aboutMe .container ul {
+  padding: 0 15px;
+}
+.aboutMe .skill {
+  margin: 50px auto 0;
+}
+.aboutMe img {
+  display: none;
+}/*# sourceMappingURL=aboutMe.css.map */

@@ -1,0 +1,58 @@
+@import '../variables.scss';
+
+@media (min-width: 1440px) {
+	.work {
+		.container {
+			width: 50%;
+			background-color: $white;
+			color: $primary-purple;
+			border: .5px solid $primary-purple;
+			transition: all 1s;
+			transform-origin: center left;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			height: 100%;
+
+			a {
+				border: 2px solid $primary-purple;
+				bottom: 50px;
+			}
+		}
+		.container:nth-child(1) {
+			left: 0;
+			transform: translateX(-1000px);
+		}
+
+		.container:nth-child(2) {
+			transform: translateX(1000px);
+			transition: all 1s .1s;
+		}
+
+		.container:nth-child(3) {
+			transform: translateX(1000px);
+			transition: all 1s .2s;
+		}
+
+		.container:nth-child(4) {
+			transform: translateX(1000px);
+			transition: all 1s .3s;
+		}
+
+		.transition {
+			transform: translateX(0) rotateX(10deg) !important;
+		}
+
+		.active {
+			transform: translateX(-100%) translateZ(-10px) rotateX(10deg) !important;
+		}
+
+		.active2 {
+			transform: translateX(-100%) translateZ(-20px) rotateX(10deg) !important;
+		}
+
+		.active3 {
+			transform: translateX(-100%) translateZ(-30px) rotateX(10deg) !important;
+		}
+	}
+}

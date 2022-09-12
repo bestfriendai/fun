@@ -1,0 +1,18 @@
+.work {
+  height: 100vh;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+}
+.work .containerOuter {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 100%;
+}
+.work button {
+  display: none;
+}
+
+.work::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=work.css.map */

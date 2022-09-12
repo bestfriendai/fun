@@ -1,0 +1,67 @@
+@media (min-width: 1440px) {
+  .aboutMe {
+    display: flex;
+    height: calc(100vh + 100px);
+    position: relative;
+  }
+  .aboutMe .container {
+    width: 50vw;
+    height: calc(100% - 450px);
+    flex-shrink: 1;
+    margin: 300px 0 0 0;
+    overflow: hidden;
+    transform: translate(0, 200px) scale(0.1);
+    opacity: 0;
+    border: none;
+    transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.3);
+  }
+  .aboutMe .container span {
+    font-size: 3.75rem;
+    padding: 0 0 0 150px;
+  }
+  .aboutMe .container p,
+.aboutMe .container ul {
+    font-size: 1rem;
+  }
+  .aboutMe .container p {
+    padding: 0 100px 0 150px;
+  }
+  .aboutMe .container ul {
+    padding: 0 0 0 55px;
+  }
+  .aboutMe .active {
+    transform: none;
+    opacity: 1;
+  }
+  .aboutMe .skill {
+    margin: 450px 0 0 0;
+  }
+  .aboutMe .skill span {
+    padding: 0 0 0 35px;
+  }
+  .aboutMe img {
+    position: absolute;
+    width: 100px;
+    display: block;
+  }
+  .aboutMe .stairs {
+    width: 60px;
+  }
+  .aboutMe .circle1 {
+    top: 620px;
+    left: 400px;
+  }
+  .aboutMe .stairs1 {
+    top: 680px;
+    left: 550px;
+  }
+  .aboutMe .circle2 {
+    top: 250px;
+    right: 550px;
+  }
+  .aboutMe .stairs2 {
+    top: 320px;
+    right: 350px;
+    transform: rotate(270deg);
+  }
+}/*# sourceMappingURL=aboutMe.css.map */

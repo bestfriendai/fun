@@ -1,0 +1,83 @@
+.inactive {
+  opacity: 0;
+  transform: translate(0, -1100px);
+}
+.inactive .socialLink {
+  transform: translate(400px) !important;
+}
+.inactive .link {
+  transform: translate(-300px);
+}
+
+.active {
+  opacity: 1;
+  transform: translate(0, 1200px);
+}
+.active .socialLink {
+  transform: translate(-400px) !important;
+}
+.active .link {
+  transform: translate(300px);
+}
+
+.menu {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  top: -1100px;
+  bottom: 0;
+  transition: transform 0.5s ease-in-out;
+  z-index: 3;
+}
+.menu .socialLink {
+  width: 100vw;
+  height: 50px;
+  position: relative;
+  left: 400px;
+  transition: transform 1s 0.5s ease-in-out;
+}
+.menu .socialLink hr {
+  width: 20vw;
+  border-width: 2px;
+  background-color: #5444c1;
+  border-color: #5444c1;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: 0;
+  left: 25px;
+}
+.menu .socialLink .icons {
+  position: absolute;
+  left: 130px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 125px;
+  display: flex;
+  justify-content: space-around;
+}
+.menu .socialLink .icons .icon {
+  transform: scale(1.5);
+  color: #000000;
+}
+.menu .link {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 20px;
+  position: absolute;
+  left: -300px;
+  transition: transform 1s 0.5s ease-in-out;
+}
+.menu .link button {
+  font-size: 2.5rem;
+  color: #000000;
+  padding: 30px 0;
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: none;
+  text-align: left;
+}/*# sourceMappingURL=menu.css.map */

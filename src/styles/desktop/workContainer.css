@@ -1,0 +1,46 @@
+@media (min-width: 1440px) {
+  .work .container {
+    width: 50%;
+    background-color: #ffffff;
+    color: #5444c1;
+    border: 0.5px solid #5444c1;
+    transition: all 1s;
+    transform-origin: center left;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+  }
+  .work .container a {
+    border: 2px solid #5444c1;
+    bottom: 50px;
+  }
+  .work .container:nth-child(1) {
+    left: 0;
+    transform: translateX(-1000px);
+  }
+  .work .container:nth-child(2) {
+    transform: translateX(1000px);
+    transition: all 1s 0.1s;
+  }
+  .work .container:nth-child(3) {
+    transform: translateX(1000px);
+    transition: all 1s 0.2s;
+  }
+  .work .container:nth-child(4) {
+    transform: translateX(1000px);
+    transition: all 1s 0.3s;
+  }
+  .work .transition {
+    transform: translateX(0) rotateX(10deg) !important;
+  }
+  .work .active {
+    transform: translateX(-100%) translateZ(-10px) rotateX(10deg) !important;
+  }
+  .work .active2 {
+    transform: translateX(-100%) translateZ(-20px) rotateX(10deg) !important;
+  }
+  .work .active3 {
+    transform: translateX(-100%) translateZ(-30px) rotateX(10deg) !important;
+  }
+}/*# sourceMappingURL=workContainer.css.map */

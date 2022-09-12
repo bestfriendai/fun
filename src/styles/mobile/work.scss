@@ -1,0 +1,19 @@
+.work {
+	height: 100vh;
+	overflow: scroll;
+	overflow: -moz-scrollbars-none;
+
+	.containerOuter {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		height: 100%;
+	}
+
+	button {
+		display: none;
+	}
+}
+.work::-webkit-scrollbar {
+	display: none;
+}

@@ -1,0 +1,77 @@
+@import '../variables.scss';
+
+.wrapper {
+	background-color: $primary-purple;
+	height: 100vh;
+
+	.successForm {
+		color: $primary-green;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		h1 {
+			font-size: 2.5rem;
+			top: 20vh;
+			margin: 100px 0 30px;
+		}
+
+		h2 {
+			font-size: 1.375rem;
+			top: 30vh;
+			margin: 0 0 100px 0;
+		}
+
+		.backToHome {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: 300px;
+			height: 60px;
+			background-color: $footer-color;
+			color: $primary-green;
+			font-size: 1rem;
+			font-weight: bold;
+			overflow: hidden;
+
+			span {
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				top: 50%;
+				text-transform: uppercase;
+			}
+
+			// .icon {
+			// 	color: $primary-green;
+			// 	font-size: 2rem;
+			// 	position: absolute;
+			// 	left: 20%;
+			// 	transform: translate(-50%, -50%);
+			// 	top: 50%;
+			// }
+
+			.btnDynamic {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 2;
+				transition: all ease .5s;
+				background-color: $white;
+				color: $primary-purple;
+
+				// .icon {
+				// 	color: $primary-purple;
+				// }
+			}
+		}
+
+		a:hover .btnDynamic {
+			transform: translateX(100%);
+		}
+	}
+}

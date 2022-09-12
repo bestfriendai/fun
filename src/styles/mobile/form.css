@@ -1,0 +1,92 @@
+.form {
+  height: 100vh;
+  position: relative;
+  background-color: #f9f9f9;
+}
+.form .text {
+  position: absolute;
+  top: 15%;
+  margin: 0 30px;
+  color: #5444c1;
+}
+.form .text span {
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+.form .text p {
+  font-size: 1rem;
+  margin: 13px 0;
+}
+.form form {
+  position: absolute;
+  top: 30%;
+  margin: 0 30px;
+  width: calc(100% - 90px);
+}
+.form form .formRow {
+  margin: 10px 0;
+}
+.form form .formRow span {
+  font-size: 0.6875rem;
+}
+.form form .formRow .input {
+  border: none;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid rgba(61, 21, 95, 0.5);
+  border-radius: 0;
+  width: 100%;
+  padding: 10px 10px;
+}
+.form form .formRow textarea {
+  resize: none;
+  min-height: 50px;
+}
+.form button {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  border: 2px solid #5444c1;
+  background-color: #5444c1;
+  color: #ffffff;
+  font-size: 1rem;
+  bottom: -80px;
+  font-weight: bold;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form button span {
+  position: absolute;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  text-transform: uppercase;
+}
+.form button .icon {
+  color: #ffffff;
+  font-size: 2rem;
+  position: absolute;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+.form button .btnDynamic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  transition: all ease 0.5s;
+  background-color: #ffffff;
+  color: #5444c1;
+}
+.form button .btnDynamic .icon {
+  color: #5444c1;
+}
+.form button button:hover .btnDynamic {
+  transform: translateX(100%);
+}/*# sourceMappingURL=form.css.map */

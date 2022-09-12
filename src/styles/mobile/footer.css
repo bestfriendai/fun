@@ -1,0 +1,26 @@
+.footer {
+  height: 200px;
+  background-color: #3d155f;
+  position: relative;
+}
+.footer .icons {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  font-size: 2.5rem;
+  justify-content: space-around;
+}
+.footer .icons .icon {
+  color: #ffffff;
+}
+.footer span {
+  color: #ccf381;
+  font-size: 1rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+}/*# sourceMappingURL=footer.css.map */

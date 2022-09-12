@@ -1,0 +1,166 @@
+@media (min-width: 1440px) {
+  .header nav {
+    transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.3);
+  }
+  .header nav hr {
+    display: none;
+  }
+  .header nav .spanMenu {
+    display: none;
+  }
+  .header nav .icon {
+    position: absolute;
+    color: #ffffff;
+    font-size: 2rem;
+    right: 115px;
+    top: 35px;
+    display: block;
+  }
+  .header .white {
+    height: 0px;
+    color: #5444c1;
+  }
+  .header .white .icon {
+    color: #000000;
+  }
+  .header .white a {
+    color: #5444c1;
+  }
+  .header .bust {
+    transform: scale(1);
+  }
+  .header .bust .head {
+    left: 65%;
+    top: 170px;
+  }
+  .header .bust .head .face.shadow {
+    display: block;
+    top: -310px;
+    z-index: 0;
+    background-color: transparent;
+  }
+  .header .background {
+    height: 45vh;
+    width: 60vw;
+    top: 330px;
+    left: 60%;
+  }
+  .header .name {
+    margin: -200px 120px;
+    text-align: left;
+    font-size: 5rem;
+  }
+  .header .name .hi {
+    font-weight: 400;
+    display: block;
+  }
+  .header .name strong {
+    display: inline-block;
+  }
+  .header .name .description {
+    display: block;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    width: 500px;
+  }
+  .header span.scroll {
+    position: absolute;
+    top: 600px;
+    left: 300px;
+    transform: translate(-20%, 0);
+  }
+  .header div.scroll {
+    top: 650px;
+    left: 327px;
+  }
+  .header .menuDesktop {
+    display: block;
+    position: absolute;
+    bottom: 55px;
+    right: 25px;
+    width: 100px;
+    height: 150px;
+  }
+  .header .menuDesktop .headerMenu {
+    font-size: 0.75rem;
+    color: #ccf381;
+    font-weight: bold;
+    border-bottom: 1px solid #ccf381;
+    text-align: right;
+    display: block;
+    padding: 0 0 7.5px;
+    margin: 0 0 20px 50px;
+    cursor: default;
+  }
+  .header .menuDesktop .menuDesktopFixed {
+    position: fixed;
+    width: 100px;
+    z-index: 10000;
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu {
+    margin: 5px 0;
+    position: relative;
+    cursor: pointer;
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #ccf381;
+    border: 3.5px solid #ccf381;
+    box-sizing: border-box;
+    transform: rotate(45deg) scale(0.5);
+    position: absolute;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.3);
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu .scrollDot {
+    transform: rotate(0deg);
+    background-color: transparent;
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu .scrollDotColor {
+    transform: rotate(0deg);
+    background-color: transparent;
+    border: 3.5px solid #5444c1;
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu .colorDot {
+    background-color: #5444c1;
+    border: 3.5px solid #5444c1;
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu .line {
+    width: calc(100% - 30px);
+    height: 1px;
+    background-color: #ccf381;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu .colorLine {
+    background-color: #5444c1;
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: #ccf381;
+    font-size: 0.75rem;
+    text-align: right;
+    width: 100%;
+    padding: 0 0 20px 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.3);
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu button:hover {
+    visibility: visible;
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu .colorButton {
+    color: #5444c1;
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu:hover button {
+    visibility: visible;
+    letter-spacing: 2px;
+  }
+  .header .menuDesktop .menuDesktopFixed .subMenu:hover .line {
+    height: 2px;
+  }
+}/*# sourceMappingURL=header.css.map */

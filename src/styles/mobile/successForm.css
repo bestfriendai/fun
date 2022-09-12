@@ -1,0 +1,9 @@
+@media (max-width: 1440px) {
+  .wrapper .successForm h1 {
+    font-size: 1.75rem;
+  }
+  .wrapper .successForm h2 {
+    font-size: 1rem;
+    margin: 0 0 50px;
+  }
+}/*# sourceMappingURL=successForm.css.map */

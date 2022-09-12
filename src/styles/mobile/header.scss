@@ -1,0 +1,379 @@
+@import '../variables.scss';
+
+.header {
+	height: 100vh;
+	background-color: $primary-purple;
+	position: relative;
+
+	nav {
+		height: 100px;
+		position: fixed;
+		width: 100vw;
+		z-index: 9999;
+		background: linear-gradient(180deg, $primary-purple 85%, hsla(0, 0%, 100%, 0));
+
+		img {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: 106px;
+		}
+
+		hr {
+			position: absolute;
+			transform: rotate(90deg);
+			top: 40px;
+			background-color: $primary-green;
+			width: 47px;
+			left: 120px;
+			border-color: $primary-green;
+		}
+
+		span,
+		a {
+			color: $primary-green;
+			font-weight: bold;
+			position: absolute;
+			font-size: .75rem;
+		}
+
+		.spanMenu {
+			left: 165px;
+			top: 42px;
+			overflow: hidden;
+			width: 65px;
+			height: 15px;
+
+			.spanLink {
+				display: inline-block;
+				transform: translateY(-20px);
+				height: 15px;
+				transition: all .25s cubic-bezier(.175, .885, .32, 1.3);
+				cursor: pointer;
+			}
+
+			.menuSpan {
+				padding: 20px 0;
+			}
+		}
+
+		.spanMenu:hover * {
+			letter-spacing: 6px;
+		}
+
+		a {
+			right: 35px;
+			top: 42px;
+			transition: letter-spacing .25s cubic-bezier(.175, .885, .32, 1.3);
+		}
+
+		a:hover {
+			letter-spacing: 1px;
+		}
+
+		.icon {
+			display: none;
+		}
+	}
+
+	.navMenu {
+		background: none;
+		background-color: $white;
+		transition: all .25s ease-in-out;
+
+		hr {
+			background-color: $primary-purple;
+			border-color: $primary-purple;
+		}
+
+		span,
+		a {
+			color: $primary-purple;
+		}
+		.spanMenu {
+			.spanLink {
+				transform: none;
+			}
+		}
+	}
+
+	.bust {
+		transform: scale(0.8);
+		position: relative;
+		z-index: 2;
+
+		.head {
+			width: 301px;
+			height: 436px;
+			position: relative;
+			top: 80px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			z-index: 2;
+
+			div {
+				position: absolute;
+			}
+
+			.hair {
+				width: 218px;
+				height: 90px;
+				background-color: $primary-green;
+				border-radius: 100px 70px 30px 0;
+				left: 50%;
+				transform: translate(-50%, 0);
+				z-index: 3;
+			}
+
+			.face {
+				width: 197px;
+				height: 215px;
+				background-color: $white;
+				border: 5px solid $primary-green;
+				position: relative;
+				border-radius: 5px 0 100px 100px;
+				left: calc(50% - 5.5px);
+				transform: translate(-50%, 0);
+				top: 80px;
+				z-index: 3;
+
+				.eyebrows {
+					width: 59px;
+					height: 16px;
+					background-color: $primary-green;
+					top: 37px;
+				}
+
+				.eyebrows.left {
+					left: 20px;
+					border-radius: 100px 100px 0 100px;
+				}
+
+				.eyebrows.right {
+					right: 22px;
+					border-radius: 100px 100px 100px 0;
+				}
+
+				.eyes {
+					background-color: $white;
+					width: 40px;
+					height: 25px;
+					border-radius: 50%;
+					top: 65px;
+
+					.ball {
+						background-color: transparent;
+						width: 20px;
+						height: 20px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						border-radius: 50%;
+						border: 6px solid $primary-green;
+						box-sizing: border-box;
+					}
+				}
+
+				.eyes.left {
+					left: 30px;
+				}
+
+				.eyes.right {
+					right: 30px;
+				}
+
+				.lowerEyelid {
+					width: 16px;
+					height: 5px;
+					background-color: $primary-green;
+					top: 96.5px;
+				}
+
+				.lowerEyelid.left {
+					left: 40.5px;
+				}
+
+				.lowerEyelid.right {
+					right: 44.5px;
+				}
+
+				.nose {
+					width: 44px;
+					height: 70px;
+					border-radius: 0 0 100px 100px;
+					background-color: $white;
+					border: solid 5px $primary-green;
+					border-top: none;
+					border-right: none;
+					left: 50%;
+					transform: translate(-50%, 0);
+					top: 53px;
+				}
+
+				.mouth {
+					width: 73px;
+					height: 15px;
+					border-radius: 0 0 100px 5px;
+					background-color: $white;
+					border: 5px solid $primary-green;
+					border-top: none;
+					border-left: none;
+					left: 50%;
+					transform: translate(-50%, 0);
+					top: 140px;
+				}
+			}
+
+			.ears {
+				width: 23px;
+				height: 73px;
+				border-radius: 100px 0 0 100px;
+				background-color: $white;
+				border: 5px solid $primary-green;
+				position: relative;
+				z-index: 2;
+
+				.line {
+					width: 5px;
+					height: 27px;
+					background-color: $primary-green;
+					transform: rotate(-20deg);
+					top: 29.3px;
+					left: 9.9px;
+				}
+			}
+
+			.ears.left {
+				left: 13px;
+				top: -90px;
+			}
+
+			.ears.right {
+				transform: rotate(180deg);
+				top: -170px;
+				left: 244px;
+
+				.line {
+					top: 18.3px;
+					transform: rotate(200deg);
+				}
+			}
+
+			.neck {
+				width: 107px;
+				height: 80px;
+				border-radius: 20px;
+				background-color: $white;
+				border: 5px solid $primary-green;
+				top: 295px;
+				border-top: none;
+				z-index: 1;
+			}
+
+			.neck.left {
+				left: 70px;
+				transform: rotate(30deg);
+				border-right: none;
+			}
+
+			.neck.right {
+				right: 70px;
+				transform: rotate(-30deg);
+				border-left: none;
+			}
+			.body {
+				width: 301px;
+				height: 107px;
+				border-radius: 44px 44px 0 0;
+				border: 5px solid $primary-green;
+				border-bottom: none;
+				background-color: $white;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%, 0);
+			}
+		}
+
+		.face.shadow {
+			display: none;
+		}
+	}
+
+	.background {
+		position: absolute;
+		width: 100vw;
+		top: 140px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		z-index: 1;
+		opacity: .5;
+	}
+
+	.name {
+		font-size: 2.625rem;
+		color: $primary-green;
+		display: block;
+		margin: 60px 20px 0;
+		text-align: center;
+
+		strong {
+			display: inline-block;
+		}
+
+		.description {
+			display: none;
+		}
+	}
+
+	span.scroll {
+		color: $primary-green;
+		font-size: 0.75rem;
+		letter-spacing: 2.4px;
+		display: block;
+		margin: 10px auto;
+		text-align: center;
+		width: 100px;
+		text-align: center;
+	}
+
+	span.scroll::before {
+		content: 'SCROLL';
+		animation: scroll infinite 15s;
+	}
+
+	@keyframes scroll {
+		0% {
+			content: "SCROLL";
+		}
+
+		20% {
+			filter: blur(1px);
+			opacity: 0;
+		}
+
+		50% {
+			content: 'DOWN';
+			filter: blur(0px);
+			opacity: 1;
+		}
+
+		70% {
+			filter: blur(1px);
+			opacity: 0;
+		}
+	}
+
+	div.scroll {
+		width: 1px;
+		height: 45vh;
+		background-color: #a398e9;
+		position: absolute;
+		top: 655px;
+		left: 50%;
+	}
+
+	.menuDesktop {
+		display: none;
+	}
+}
