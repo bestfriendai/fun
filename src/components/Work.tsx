@@ -72,7 +72,7 @@ function Work() {
 				<WorkContainer
 					title={'This website'}
 					description={'View the code of this website'}
-					date={'July 2022'}
+					date={'July and September 2022'}
 					isCodeOrWork={'code'}
 					backgroundColor={'purple'}
 					link={'https://github.com/Materka11/MyWholeWeb'}
