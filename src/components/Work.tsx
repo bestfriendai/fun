@@ -75,7 +75,7 @@ function Work() {
 					date={'July 2022'}
 					isCodeOrWork={'code'}
 					backgroundColor={'purple'}
-					link={'https://github.com/Materka11/myWeb'}
+					link={'https://github.com/Materka11/MyWholeWeb'}
 					classContainer={classContainer3}
 				/>
 				{/* <WorkContainer
