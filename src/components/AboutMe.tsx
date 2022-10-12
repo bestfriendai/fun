@@ -55,6 +55,7 @@ function AboutMe() {
 					<li>Basic design skills in Adobe XD</li>
 					<li>Basic design skills in Blender</li>
 					<li>Ability to use React Three Fiber</li>
+					<li>Ability to use the tool: Webpack, Babel</li>
 				</ul>
 			</div>
 			<img className="circle1" src={circles} alt="background element" />
