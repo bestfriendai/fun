@@ -146,12 +146,14 @@ export function Basement(props: JSX.IntrinsicElements['group'] ) {
 	let navigate = useNavigate();
 
 	const handleClickMonitor = (e : any) => {
-		e.stopPropagation(); e.delta <= 2 && api.refresh(e.object).fit();
-		setTimeout(() => {
-			navigate('/main');
-			navigate(0)
-		}, 1250)
-	}
+    e.stopPropagation(); 
+    e.delta <= 2 && api.refresh(e.object).fit();
+    setTimeout(() => {
+        window.location.href = "https://main.boreddev.co"
+    }, 1250)
+}
+
+	
 
 	return (
 		<group ref={group} {...props} dispose={null}>
