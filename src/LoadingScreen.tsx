@@ -28,7 +28,7 @@ function LoadingScreen() {
 	return (
 		<div className={classLoadingScreen}>
 			<button className="start" onClick={handleClickStart}>
-				START
+				EXIT THE MATRIX
 			</button>
 		</div>
 	);
