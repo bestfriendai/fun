@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import React, { useRef, useMemo, useLayoutEffect, useState, useEffect } from 'react';
 import { useGLTF, useAnimations, useBounds } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
-import page from './img/screenMyWeb.png';
+import page from './img/boreddev.gif';
 import desktop from './img/pulpit.png';
 import { useLoader } from '@react-three/fiber';
 import { Howl } from 'howler';
